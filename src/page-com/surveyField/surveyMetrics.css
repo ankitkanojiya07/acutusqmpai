@@ -1,0 +1,88 @@
+.sm-survey-metrics-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    margin: 20px ;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sm-metrics-card, .sm-in-field-data {
+    background-color: white;
+
+    padding: 20px;
+    width: 100%;
+   
+  }
+  
+  .sm-metrics-input-group {
+    margin-bottom: 15px;
+  }
+  
+  .sm-metrics-input-group label {
+    display: block;
+    margin-bottom: 5px;
+   
+  }
+  
+  .sm-metrics-input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #a29f9f;
+    border-radius: 4px;
+  }
+  
+  .sm-data-section-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  .sm-data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .sm-data-item {
+    margin-bottom: 10px;
+  }
+  
+  .sm-data-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .sm-input-with-unit {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sm-input-with-unit input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .sm-unit {
+    background-color: #e0e0e0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .sm-survey-metrics-container {
+      flex-direction: column;
+    }
+  
+    .sm-metrics-card, .sm-in-field-data {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

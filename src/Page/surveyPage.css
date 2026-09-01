@@ -1,0 +1,330 @@
+/* General Styling */
+.survey-form-wrapper {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  height: 90vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Toggle Button Containers */
+.toggle-button-container-cont, 
+.toggle-button-container-1 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Toggle Button Styling */
+#idea {
+  margin-right: 20px;
+}
+
+.toggle-button-container-1 button {
+  padding: 12px 24px;
+  background-color: black; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button-container-1 button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-button-container-1 button.active {
+  background-color: #28a745; 
+  transform: scale(1.05);
+}
+
+.toggle-button-container {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #a1e252, #41cd5a);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button-container:hover {
+  background-color: #007bff;
+}
+
+/* Toggle Button Style */
+.toggle-button {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  background-color: #eaf0f5;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button:hover {
+  background-color: #d4e0ea;
+}
+
+/* Save Button */
+.save-button {
+  width: 120px;
+  padding: 12px 25px;
+  margin: 20px 0;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+
+.save-button:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  transform: translateY(-2px);
+}
+
+.save-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack elements for better responsiveness */
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Survey Details */
+h1.survey-det {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Layout Containers */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+}
+
+.section-left, .section-right {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Form Inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[disabled] {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Currency Input */
+.currency-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.currency-input span {
+  padding: 8px;
+  border-right: 1px solid #ddd;
+  color: #555;
+}
+
+.currency-input input {
+  border: none;
+  flex-grow: 1;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Survey CPI Box */
+.survey-cpi-box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.survey-cpi-box h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.survey-cpi-box p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Qualification Section */
+.qualification-section {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.qualification-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.qualification-section p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .survey-form-wrapper {
+    padding: 10px;
+  }
+
+  .toggle-button-container-1 button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+
+  .form-container {
+    flex-direction: column; /* Stack for smaller screens */
+  }
+
+  .container {
+    flex-direction: column; /* Stack sections on mobile */
+  }
+
+  .section-left, .section-right {
+    flex: none;
+    width: 100%; /* Full width on mobile */
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1.survey-det {
+    font-size: 20px;
+  }
+
+  .toggle-button-container-1 button {
+    width: 100%; /* Full width buttons on small screens */
+    margin-bottom: 10px;
+  }
+
+  .qualification-section h2 {
+    font-size: 18px;
+  }
+}

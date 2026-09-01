@@ -1,0 +1,89 @@
+/* Container for the dropdown */
+/* CreateSurveyForm.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#surveyForm {
+    max-width: 600px;
+    margin: 20px auto; /* Space between navbar and form */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* A bit brighter for contrast */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Styling for form labels */
+#surveyForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px; /* Slightly smaller text for labels */
+    color: #333;
+}
+
+/* Styling for text inputs and select elements */
+#surveyForm input[type="text"],
+#surveyForm input[type="number"],
+#surveyForm input[type="datetime-local"],
+#surveyForm select,
+#surveyForm #country-language { /* Target the dropdown within the form */
+    width: 100%;
+    padding: 10px; /* More padding for a cleaner look */
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px; /* Consistent font size */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Styling for the submit button */
+#surveyForm button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif; /* Consistent font for the button */
+}
+
+#surveyForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for the dropdown */
+#country-language {
+    width: 100%; /* Ensure the dropdown width matches other form elements */
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#country-language:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* For better accessibility and appearance */
+select {
+    appearance: none; /* Removes default styling in some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="gray" d="M143 352l-143-144c-12-12-12-32 0-44l143-144c12-12 32-12 44 0l143 144c12 12 12 32 0 44l-143 144c-12 12-32 12-44 0z"/></svg>') no-repeat right 10px center;
+    background-size: 8px 12px;
+}
+
+option:disabled {
+    color: #999;
+}

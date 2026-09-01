@@ -1,0 +1,125 @@
+/* General navbar styling */
+.navbar {
+    background-color: #efefef;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Container for navbar content */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* Logo styling */
+.navbar-logo img {
+    height: 50px; /* Increase height as needed */
+    width: auto;
+    max-width: 200px; /* Adjust max width if needed */
+}
+
+/* Buttons container styling */
+.navbar-buttons {
+    display: flex;
+    gap: 15px; /* Space between the buttons */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Button styling */
+.navbar-button {
+    padding: 10px 20px;
+    background-color: #00bf63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #00bf63;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Black shadow */
+}
+
+/* Logout button specific styling */
+.logout-button {
+    background-color: #dc3545 !important; /* Red background for logout */
+}
+
+.logout-button:hover {
+    background-color: #c82333 !important; /* Darker red on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Black shadow */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        gap: 15px;
+    }
+
+    /* Buttons should take up full width in smaller screens */
+    .navbar-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .navbar-button {
+        width: 100%; /* Make buttons take full width */
+        margin-bottom: 0; /* Remove individual margins */
+        text-align: center;
+    }
+    
+    .navbar-logo img {
+        height: 40px;
+        max-width: 150px;
+    }
+}
+
+/* Tablet and medium screen responsiveness */
+@media (max-width: 1024px) {
+  .navbar-buttons {
+    gap: 10px;
+  }
+  
+  .navbar-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Small tablet responsiveness */
+@media (max-width: 896px) {
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .navbar-button {
+    padding: 8px 12px;
+    font-size: 13px;
+    min-width: 100px;
+  }
+}
